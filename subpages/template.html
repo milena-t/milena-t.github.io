@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Sewing</title>
+        <style>
+            *{
+                border : 0 ;
+                margin : 0 ; 
+                padding : 0 ;
+            }
+            #outer-box{
+                background-color: #E0DEE3;
+                display : grid ;
+                grid-template:
+                "header-image header-image"
+                "sidebar-contents main-body"
+                "footer footer" 
+                / 1fr 4fr;
+            }
+            #header-image{
+                grid-area: header-image;
+            }
+            #sidebar-contents{
+                grid-area: sidebar-contents;
+            }
+            #main-body{
+                grid-area: main-body;
+            }
+            #footer{
+                grid-area: footer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="outer-box">
+            <div id="header-image">
+                Hello here comes a header image, make this really long to be sure that it is as long as i think
+            </div>
+            <div id="sidebar-contents">
+                This is the test for the sidebar
+                give me a table of contents that
+                clicks and jumps around to headings
+            </div>
+            <div id="main-body">
+                Here is the main body
+            </div>
+            <footer id="footer">
+                if you scrolled this far down you get free feet
+            </footer>
+        </div>
+    </body>
+</html>

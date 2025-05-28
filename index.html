@@ -1,10 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
-<title>Arts and Crafts</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Arts and Crafts</title>
+
+    <style>
+        *{
+            border : 0 ;
+            margin : 0 ; 
+            padding : 0 ;
+        }
+        #outer-box{
+            background-color: #E0DEE3;
+            display : grid ;
+            /*grid-template-columns: 1fr 3fr; /* 1/4 and 3/4 fractions of columns */
+            grid-template:
+            "sidebar landing-page"
+            "footer footer" 
+            / 1fr 3fr;
+        }
+        #sidebar,#landing-page{
+            padding:2em;
+        }
+        #sidebar{
+            grid-area : sidebar ;
+        }
+        #landing-page{
+            grid-area : landing-page ;
+        }
+        #footer{
+            grid-area : footer ;
+            padding:2em;
+        }
+    </style>
 </head>
 <body>
 
+<div id="outer-box">
+    <div id="sidebar">
+
+        <h3> All the things I like to do:</h3>
+        
+        <h4>Fiber arts</h4>
+        <h5><a href="subpages/sewing.html">Sewing</a></h5>
+        <h5>Knitting</h5>
+        <h5>Coming soon: Klöppeln (in german)</h5>
+        <h4>visual arts</h4>
+        <h5>Watercolor painting</h5>
+        <h5>Linoprint</h5>
+        <h5>Digital scientific illustration</h5>
+    
+    </div>
+    <div id="landing-page">
+        <h1>Milena's arts and crafts stuff</h1>
+        <img src="images/knitting/beetle_cowl_on_me.jpeg" alt="me wearing my things" />
+    </div>
+    <footer id="footer">
+        This is my feet (not for free) 6tf6rfrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+    </footer>
+</div>
+
+<!--
 <h1>All the things I like to do</h1>
 <p>
     Unfortunately all the things i like to do sometimes includes programming so there's now a blog about it. 
@@ -12,11 +69,18 @@
 </p>
 
 <ul>
-    <li>vaguely historical inspired sewing</li>
+    <li>Vaguely historical inspired sewing</li>
+    <li>Knitting</li>
     <li>Watercolor painting</li>
     <li>Linoprint</li>
     <li>Digital scientific illustration</li>
+    <li>Coming soon: Klöppeln (in german)</li>
 </ul>
+<p>Here i am testing including an image</p>
+<img src="images/knitting/beetle_cowl_on_me.jpeg" alt="me wearing my things" />
+
+-->
+
 
 </body>
 </html> 
