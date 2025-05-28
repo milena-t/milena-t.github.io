@@ -1,0 +1,5 @@
+--charcoal: #394053ff;
+--glaucous: #637092ff;
+--cool-gray: #929cb5ff;
+--platinum: #e0dee3ff; # background
+--blush: #c96480ff;
