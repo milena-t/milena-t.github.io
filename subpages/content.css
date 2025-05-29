@@ -46,9 +46,9 @@
     background-color: #C2C8D6;
     padding: 1em;
     
-    border-top-style: solid;
-    border-top-color: #394053;
-    border-top-width: 0.075em;
+    border-bottom-style: solid;
+    border-bottom-color: #394053;
+    border-bottom-width: 0.1em;
     
 }
 h1{
@@ -59,10 +59,14 @@ h2{
     padding-top:0.5em;
     padding-bottom:0.5em;
 }
-
+p{
+    padding-bottom:0.5em;
+    text-indent:0px;
+}
 #main-body{
     grid-area: main-body;
     padding :1em;
+    padding-right: 4em;
 }
 #footer{
     background-color: #929cb5;
