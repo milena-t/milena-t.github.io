@@ -11,6 +11,7 @@
             margin : 0 ; 
             padding : 0 ;
         }
+        html,body { height:100%; }
         #outer-box{
             background-color: #E0DEE3;
             display : grid ;
@@ -25,13 +26,45 @@
         }
         #sidebar{
             grid-area : sidebar ;
+            border-right-style: solid ;
+            border-right-color: #394053;
+            border-right-width: 0.1em;
+            display: grid;
+            grid-template: 
+            "sidebar-listing"
+            / 1fr;
+        }
+        .sidebar-header{
+            background-color: #AAB2C5;
+            padding: 1em;
+            height: 2em;
+            border-top-style: solid;
+            border-top-color: #394053;
+            border-top-width: 0.1em;
+            text-align: center;
+            vertical-align: middle ;
+        }
+        .sidebar-element{
+            background-color: #C2C8D6;
+            padding: 1em;
+            height: 2em;
+            /*
+            border-top-style: solid;
+            border-top-color: #394053;
+            border-top-width: 0.075em;
+            */
         }
         #landing-page{
             grid-area : landing-page ;
+            height:max-content;
         }
         #footer{
             grid-area : footer ;
+            background-color: #929cb5;
             padding:2em;
+            border-top-color: #394053;
+            border-top-width: 0.1em;
+            border-top-style: solid
         }
     </style>
 </head>
@@ -42,14 +75,15 @@
 
         <h3> All the things I like to do:</h3>
         
-        <h4>Fiber arts</h4>
-        <h5><a href="subpages/sewing.html">Sewing</a></h5>
-        <h5><a href="subpages/knitting.html">Knitting</a></h5>
-        <h5>Coming soon: <a href="subpages/kloeppeln.html">Klöppeln</a> (in german)</h5>
-        <h4>visual arts</h4>
-        <h5><a href="subpages/watercolor.html">Watercolor painting</a></h5>
-        <h5><a href="subpages/lino.html">Linoleum prints</a> </h5>
-        <h5><a href="subpages/digital.html">Digital scientific illustration</a> </h5>
+        <div class="sidebar-header"  id="sidebar-listing"><h4>Fiber arts</h4></div>
+        
+        <div class="sidebar-element" id="sidebar-listing"><h5><a href="subpages/sewing.html">Sewing</a></h5></div> 
+        <div class="sidebar-element" id="sidebar-listing"><h5><a href="subpages/knitting.html">Knitting</a></h5></div>
+        <div class="sidebar-element" id="sidebar-listing"><h5>Coming soon: <a href="subpages/kloeppeln.html">Klöppeln</a> (in german)</h5></div>
+        <div class="sidebar-header"  id="sidebar-listing"><h4>visual arts</h4></div>
+        <div class="sidebar-element" id="sidebar-listing"><h5><a href="subpages/watercolor.html">Watercolor painting</a></h5></div>
+        <div class="sidebar-element" id="sidebar-listing"><h5><a href="subpages/lino.html">Linoleum prints</a> </h5></div>
+        <div class="sidebar-element" id="sidebar-listing"><h5><a href="subpages/digital.html">Digital scientific illustration</a> </h5></div>
     
     </div>
     <div id="landing-page">

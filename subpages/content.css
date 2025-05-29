@@ -32,12 +32,29 @@
     top:0;
     height:max-content;
     position:sticky;
+    display: grid;
+    grid-template: 
+    "sidebar-element"
+    / 1fr;
 }
+
+.sidebar-element{
+    background-color: #C2C8D6;
+    padding: 1em;
+    height: 1.5em;
+    
+    border-top-style: solid;
+    border-top-color: #394053;
+    border-top-width: 0.075em;
+    
+}
+
 #main-body{
     grid-area: main-body;
     padding :1em;
 }
 #footer{
+    background-color: #929cb5;
     grid-area: footer;
     padding: 1em;
 }

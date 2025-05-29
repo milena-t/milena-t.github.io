@@ -34,6 +34,7 @@ function make_sidebar(el){
         let projectname = document.createElement("a")
         projectname.innerText = p.title
         projectname.setAttribute("href", "#"+element_id)
+        projectname.setAttribute("class", "sidebar-element")
         projectname.classList.add("project-link")
         let sidebar = document.getElementById("sidebar-contents")
         sidebar.appendChild(projectname)
