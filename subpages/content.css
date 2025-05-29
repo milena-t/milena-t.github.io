@@ -2,6 +2,8 @@
     border : 0 ;
     margin : 0 ; 
     padding : 0 ;
+    color: #394053;
+    font-family: Arial !important;
 }
 #outer-box{
     background-color: #E0DEE3;
@@ -47,6 +49,14 @@
     border-top-color: #394053;
     border-top-width: 0.075em;
     
+}
+h1{
+    padding-top:1.5em;
+    padding-bottom:0.5em
+}
+h2{
+    padding-top:0.5em;
+    padding-bottom:0.5em;
 }
 
 #main-body{
